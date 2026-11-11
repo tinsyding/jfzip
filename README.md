@@ -39,3 +39,15 @@ base64 -w0 release.jks
 ```
 
 未配置密钥时，release 构建使用 debug 签名。如果之前安装过 debug 签名版本，安装正式签名版本前需要先卸载。
+
+## Web
+
+`web/` 是独立静态 PWA，所有图片处理在浏览器本地完成，不上传服务器。
+
+```bash
+cd web
+npm install
+npm run dev
+```
+
+构建后把 `web/dist/` 上传到任意静态目录，使用 HTTPS 访问。详细说明见 `web/README.md`。

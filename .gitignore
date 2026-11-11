@@ -13,3 +13,6 @@ local.properties
 *.keystore
 keystore.properties
 /app/build
+/web/node_modules
+/web/dist
+/web/.vite
